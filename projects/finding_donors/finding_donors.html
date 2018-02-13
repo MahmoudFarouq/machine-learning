@@ -14142,10 +14142,11 @@ while NaiveBayes is much lower.</li>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<ul>
-<li>we are trying to find a relation between the features so we can predict the income of a some person based on these features, and to do so, we have tried some models to which one best models this relation</li>
-<li>the final selected model is called "logistic regression", it performed well on training with a good accuracy and a good score, and also it was time efficient</li>
-</ul>
+<p>LogisticRegression is a tool which give us the prediction (a person makes more than 50,000 or not) by taking the attributes of that person and injecting it in a mathematical equation and outputs the prediction whether he makes more than $50,000 or not.</p>
+<p>and to do so, it goes on every example (row in the dataset) and inject it in this equation, then it calculates how far the result is from the actual result given in the dataset, and the DIFFERENCE between the result and the actual label is called the cost, it does this over all the dataset and calculate the sum of costs, 
+there are some ways to caclulate the cost like <a href="https://en.wikipedia.org/wiki/Mean_squared_error">MSE</a> or <a href="https://en.wikipedia.org/wiki/MAE">MAE</a>, the less the overall cost the better the algorithm's prediction,
+except in cases where there is imbalance in thedata set, 
+and so, our mission is to minimize this cost by modifing the equation's parameters using an algorithm like <a href="https://en.wikipedia.org/wiki/Gradient_descent">GradientDescent</a>, and then re-calculate the cost again and so on tell the algorithm finds a best or optimal solution.</p>
 
 </div>
 </div>
